@@ -6,7 +6,7 @@ Tailwind VPN Landingpage is an open source, apps landing page template for [Tail
 
 ## Getting Started
 
-Choose one of the following options to get started:
+Choose one of the following options to get started 
 
 - [Download the latest release](https://github.com/naufaldi/next-landing-vpn/archive/main.zip)
 - Clone the repo: `git clone https://github.com/naufaldi/next-landing-vpn.git`
