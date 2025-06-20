@@ -7,15 +7,15 @@ const defaultMeta = {
   title: 'GimusAI',
   siteName: 'GimusAI',
   description:
-    'Landing page VPN GimusAI Best VPN For Privacy, Country and Cheapest',
+    'Preparando el talento del mañana con inteligencia artificial.',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://gimus.dewinu.dev',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
-  author: 'Lorem Ipsum'
+  image: 'https://gimus.dewinu.dev/assets/card-image.png',
+  author: 'Dewin Umana'
 };
 
 /**
