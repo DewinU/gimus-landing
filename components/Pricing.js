@@ -31,7 +31,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            {/* Plan Prueba Gratuita */}
+            {/* Plan Gratuito con Anuncios */}
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -44,53 +44,54 @@ const Pricing = () => {
                 }}
               >
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Prueba gratuita
+                  Plan Gratuito
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">1 simulación de entrevista completa</li>
-                  <li className="relative check custom-list my-2">Retroalimentación básica generada por IA</li>
-                  <li className="relative check custom-list my-2">Consejos en tiempo real</li>
-                  <li className="relative check custom-list my-2">Acceso inmediato desde navegador</li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4">$0</p>
-                  <ButtonOutline>Comenzar gratis</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-          
-            {/* Plan Estudiante Individual */}
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Estudiante Individual
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">10 simulaciones al mes</li>
-                  <li className="relative check custom-list my-2">Análisis detallado de habilidades blandas</li>
-                  <li className="relative check custom-list my-2">Reporte personalizado de desempeño</li>
-                  <li className="relative check custom-list my-2">Seguimiento de progreso</li>
-                  <li className="relative check custom-list my-2">Acceso prioritario a nuevas funciones</li>
+                  <li className="relative check custom-list my-2">Acceso básico con anuncios</li>
+                  <li className="relative check custom-list my-2">Funciones limitadas</li>
+                  <li className="relative check custom-list my-2">Retroalimentación básica</li>
+                  <li className="relative check custom-list my-2">Soporte comunitario</li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
-                    $9.99 <span className="text-black-500">/ mes</span>
+                    C$0<span className="text-black-500">/ mes</span>
+                  </p>
+                  <ButtonOutline>Comenzar Gratis</ButtonOutline>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+
+            {/* Plan Básico */}
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: .2
+                  }
+                }}
+              >
+                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  Plan Básico
+                </p>
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <li className="relative check custom-list my-2">Sin anuncios</li>
+                  <li className="relative check custom-list my-2">Acceso a funciones básicas</li>
+                  <li className="relative check custom-list my-2">Retroalimentación detallada</li>
+                  <li className="relative check custom-list my-2">Soporte por correo</li>
+                </ul>
+                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  <p className="text-2xl text-black-600 text-center mb-4">
+                    C$548 <span className="text-black-500">/ mes</span>
                   </p>
                   <ButtonOutline>Suscribirse</ButtonOutline>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            
-            {/* Plan Instituciones Educativas */}
+
+            {/* Plan Profesional */}
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -103,20 +104,19 @@ const Pricing = () => {
                 }}
               >
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Instituciones Educativas
+                  Plan Profesional
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">Acceso para múltiples estudiantes</li>
-                  <li className="relative check custom-list my-2">Informes grupales para docentes</li>
-                  <li className="relative check custom-list my-2">Personalización de escenarios de entrevista</li>
-                  <li className="relative check custom-list my-2">Sesiones de capacitación inicial</li>
-                  <li className="relative check custom-list my-2">Soporte dedicado</li>
+                  <li className="relative check custom-list my-2">Todas las características básicas</li>
+                  <li className="relative check custom-list my-2">Análisis avanzado</li>
+                  <li className="relative check custom-list my-2">Soporte prioritario</li>
+                  <li className="relative check custom-list my-2">Recursos exclusivos</li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
-                    Desde $199 <span className="text-black-500">/ año</span>
+                    C$731 <span className="text-black-500">/ mes</span>
                   </p>
-                  <ButtonOutline>Contactar</ButtonOutline>
+                  <ButtonOutline>Suscribirse</ButtonOutline>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
