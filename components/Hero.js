@@ -36,7 +36,7 @@ const Hero = ({
               Mejora tus habilidades para entrevistas laborales <strong>con IA</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-             ¿Miedo a entrevistas? Es hora de practicar.
+             ¿Miedo a entrevistas? Es hora de practicar. 😎
             </p>
               <ButtonPrimary>Empezar ahora</ButtonPrimary>
           </div>
