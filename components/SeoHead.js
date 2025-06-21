@@ -7,7 +7,7 @@ const defaultMeta = {
   title: 'GimusAI',
   siteName: 'GimusAI',
   description:
-    'Preparando el talento del mañana con inteligencia artificial.',
+    '¿Miedo a entrevistas? Es hora de practicar.',
   // change base url of your web (without '/' at the end)
   url: 'https://gimus.dewinu.dev',
   type: 'website',
