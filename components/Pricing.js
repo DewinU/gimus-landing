@@ -53,7 +53,7 @@ const Pricing = () => {
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
-                    C$170 <span className="text-black-500">/ mes</span>
+                    C$0 <span className="text-black-500">/ mes</span>
                   </p>
                   <ButtonOutline>Comenzar</ButtonOutline>
                 </div>
