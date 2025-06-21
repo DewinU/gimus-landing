@@ -30,33 +30,32 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            {/* Plan Gratuito con Anuncios */}
-            <ScrollAnimationWrapper className="flex justify-center">
+          <div className="flex flex-wrap justify-center gap-8 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+            {/* Plan Free con Anuncios */}
+            <ScrollAnimationWrapper className="w-full md:w-5/12 lg:w-1/4">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-4 lg:px-8 xl:px-10 h-full"
                 whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
+                  scale: 1.05,
+                  transition: { duration: .2 }
                 }}
               >
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Plan Gratuito
+                  Plan Free
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">Acceso básico con anuncios</li>
-                  <li className="relative check custom-list my-2">Funciones limitadas</li>
-                  <li className="relative check custom-list my-2">Retroalimentación básica</li>
-                  <li className="relative check custom-list my-2">Soporte comunitario</li>
+                  <li className="relative check custom-list my-2">1 simulación al mes</li>
+                  <li className="relative check custom-list my-2">Revisión básica de CV</li>
+                  <li className="relative check custom-list my-2">Acceso limitado a contenidos</li>
+                  <li className="relative check custom-list my-2">Acceso a la comunidad</li>
+                  <li className="relative check custom-list my-2 text-yellow-600">Incluye publicidad</li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
-                    C$0<span className="text-black-500">/ mes</span>
+                    C$170 <span className="text-black-500">/ mes</span>
                   </p>
-                  <ButtonOutline>Comenzar Gratis</ButtonOutline>
+                  <ButtonOutline>Comenzar</ButtonOutline>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -68,19 +67,18 @@ const Pricing = () => {
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
+                  transition: { duration: .2 }
                 }}
               >
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Plan Básico
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">Sin anuncios</li>
-                  <li className="relative check custom-list my-2">Acceso a funciones básicas</li>
-                  <li className="relative check custom-list my-2">Retroalimentación detallada</li>
-                  <li className="relative check custom-list my-2">Soporte por correo</li>
+                  <li className="relative check custom-list my-2">5 simulaciones al mes</li>
+                  <li className="relative check custom-list my-2">Revisión automática de CV</li>
+                  <li className="relative check custom-list my-2">Agenda personalizada</li>
+                  <li className="relative check custom-list my-2">Mayor acceso a contenido</li>
+                  <li className="relative check custom-list my-2 text-yellow-600">Publicidad mínima</li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
@@ -98,23 +96,52 @@ const Pricing = () => {
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
+                  transition: { duration: .2 }
                 }}
               >
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Plan Profesional
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">Todas las características básicas</li>
-                  <li className="relative check custom-list my-2">Análisis avanzado</li>
-                  <li className="relative check custom-list my-2">Soporte prioritario</li>
-                  <li className="relative check custom-list my-2">Recursos exclusivos</li>
+                  <li className="relative check custom-list my-2">Simulaciones ilimitadas</li>
+                  <li className="relative check custom-list my-2">Mentorías grupales</li>
+                  <li className="relative check custom-list my-2">Feedback en tiempo real</li>
+                  <li className="relative check custom-list my-2">Integración con LinkedIn</li>
+                  <li className="relative check custom-list my-2 text-green-600">Sin publicidad</li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4">
                     C$731 <span className="text-black-500">/ mes</span>
+                  </p>
+                  <ButtonOutline>Suscribirse</ButtonOutline>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+
+            {/* Plan Premium */}
+            {/* Update the other ScrollAnimationWrapper and motion.div classes to match */}
+            <ScrollAnimationWrapper className="w-full md:w-5/12 lg:w-1/4">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-4 lg:px-8 xl:px-10 h-full"
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: .2 }
+                }}
+              >
+                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  Plan Premium
+                </p>
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <li className="relative check custom-list my-2">Todo lo del plan Profesional</li>
+                  <li className="relative check custom-list my-2">Mentorías 1 a 1</li>
+                  <li className="relative check custom-list my-2">Revisión personalizada</li>
+                  <li className="relative check custom-list my-2">Soporte rápido</li>
+                  <li className="relative check custom-list my-2 text-green-600">Sin publicidad</li>
+                </ul>
+                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  <p className="text-2xl text-black-600 text-center mb-4">
+                    C$914 <span className="text-black-500">/ mes</span>
                   </p>
                   <ButtonOutline>Suscribirse</ButtonOutline>
                 </div>
